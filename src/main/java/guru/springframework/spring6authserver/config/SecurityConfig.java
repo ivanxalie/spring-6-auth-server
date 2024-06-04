@@ -74,7 +74,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(2)
+    @Order(3)
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http)
             throws Exception {
         http
@@ -144,7 +144,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    @Order(0)
+    @Order(2)
     public SecurityFilterChain actuatorSecurityFilterChain(HttpSecurity security) throws Exception {
         return security
                 .authorizeHttpRequests(matcherRegistry -> matcherRegistry.requestMatchers(EndpointRequest.toAnyEndpoint())
