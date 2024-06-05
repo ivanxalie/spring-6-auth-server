@@ -15,3 +15,8 @@ management:
       enabled: true
     livenessstate:
       enabled: true
+
+logging:
+  level:
+    guru.springframework: debug
+    org.zalando.logbook: trace
